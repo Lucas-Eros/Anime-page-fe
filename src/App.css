@@ -1,0 +1,39 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.app-title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+
+.animes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+  list-style: none;
+  grid-gap: 1.5rem;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.animes-list img {
+  max-width: 100%;
+  height: auto;
+}
+
+.animes-list li {
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .animes-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
